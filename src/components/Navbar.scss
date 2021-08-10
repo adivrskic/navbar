@@ -1,0 +1,23 @@
+$navbar-width: 5rem;
+$navbar-width-open: 20rem;
+$navbar-bg: #261c2c;
+$navbar-text-color: #6e85b2;
+$navbar-padding: 2rem;
+
+@mixin nav-position($pos: left) {
+  @if ($pos == "left") {
+    left: 0;
+  }
+  position: fixed;
+  top: 0;
+}
+
+.nav {
+  @include nav-position(left); // Let's start with nav on the left side
+  background: $navbar-bg;
+  color: $navbar-text-color;
+  height: 100vh;
+  width: $navbar-width;
+  padding-top: $navbar-padding;
+  padding-bottom: $navbar-padding;
+}
