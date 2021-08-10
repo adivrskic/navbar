@@ -13,6 +13,7 @@
   width: 1.8rem;
   height: 0.1rem;
   background-color: #fff;
+  transition: all 0.15s ease-in-out;
 }
 
 .nav-header::before,
@@ -23,12 +24,27 @@
   width: 1.8rem;
   height: 0.1rem;
   background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.15s;
 }
 
 .nav-header::before {
+  transform-origin: top center;
   top: -0.5rem;
 }
 
 .nav-header::after {
   top: 0.5rem;
+}
+
+.nav-header.open {
+  background-color: #261c2c;
+}
+
+.nav-header.open::before {
+  transform: translateY(0.55rem) rotate(135deg);
+}
+
+.nav-header.open::after {
+  transform: translateY(-0.55rem) rotate(-135deg);
 }
