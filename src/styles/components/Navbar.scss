@@ -1,8 +1,4 @@
-$navbar-width: 5rem;
-$navbar-width-open: 20rem;
-$navbar-bg: #261c2c;
-$navbar-text-color: #6e85b2;
-$navbar-padding: 2rem;
+@import "../utils/variables";
 
 @mixin nav-position($pos: left) {
   @if ($pos == "left") {
@@ -18,6 +14,10 @@ $navbar-padding: 2rem;
   color: $navbar-text-color;
   height: 100vh;
   width: $navbar-width;
-  padding-top: $navbar-padding;
-  padding-bottom: $navbar-padding;
+  padding: 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav.open {
+  width: $navbar-width-open;
 }

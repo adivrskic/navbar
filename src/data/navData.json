@@ -1,0 +1,32 @@
+[
+  {
+    "key": 1,
+    "name": "data",
+    "icon": "IoBarChartOutline"
+  },
+  {
+    "key": 2,
+    "name": "messages",
+    "icon": "IoChatbubblesOutline"
+  },
+  {
+    "key": 3,
+    "name": "settings",
+    "icon": "IoConstructOutline"
+  },
+  {
+    "key": 4,
+    "name": "games",
+    "icon": "IoGameControllerOutline"
+  },
+  {
+    "key": 5,
+    "name": "images",
+    "icon": "IoImageOutline"
+  },
+  {
+    "key": 6,
+    "name": "accessibility",
+    "icon": "IoAccessibilityOutline"
+  }
+]

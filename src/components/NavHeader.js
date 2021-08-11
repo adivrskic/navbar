@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import { NavContext } from "../context/navContext";
-import "./NavHeader.scss";
+import "../styles/components/NavHeader.scss";
 
 export const NavHeader = () => {
   const [state, dispatch] = React.useContext(NavContext);
