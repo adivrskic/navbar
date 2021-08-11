@@ -1,0 +1,12 @@
+@import "../styles/utils/variables";
+
+.mock {
+  margin-left: $navbar-width;
+  width: calc(100% - $navbar-width);
+  height: 100vh;
+  // background: #ddd;
+}
+
+.mock.open {
+  margin-left: $navbar-width-open;
+}

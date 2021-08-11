@@ -1,0 +1,10 @@
+.mock {
+  margin-left: 4rem;
+  width: calc(100% - $navbar-width);
+  height: 100vh;
+}
+
+.mock.open {
+  margin-left: 10rem;
+}
+/*# sourceMappingURL=MockSite.css.map */

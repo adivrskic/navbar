@@ -11,7 +11,7 @@ export const NavHeader = () => {
 
   return (
     <div className="nav-header-container" onClick={() => toggleNavExtend()}>
-      <div className={`nav-header ${state.navOpen && "open"}`}></div>
+      <div className={`nav-header ${state.navOpen ? "open" : "closed"}`}></div>
     </div>
   );
 };

@@ -1,9 +1,9 @@
-@import "../utils/mixins";
-
 .nav-header-container {
   cursor: pointer;
   height: 1rem;
-  @include pos(absolute, 1rem, null, null, 1.25rem);
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
 }
 
 .nav-header {
@@ -11,7 +11,9 @@
   width: 1.6rem;
   height: 0.1rem;
   background-color: #fff;
-  transform-origin: center;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
 
@@ -23,8 +25,10 @@
   width: 1.6rem;
   height: 0.1rem;
   background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  transition-delay: 0.15s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .nav-header::before {
@@ -40,9 +44,12 @@
 }
 
 .nav-header.open {
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .nav-header.open::after {
-  transform: translateY(-1rem) rotate(-90deg);
+  -webkit-transform: translateY(-1rem) rotate(-90deg);
+          transform: translateY(-1rem) rotate(-90deg);
 }
+/*# sourceMappingURL=NavHeader.css.map */

@@ -1,10 +1,9 @@
+@import "../utils/mixins";
+
 .nav-items {
-  position: absolute;
-  top: 4rem;
-  left: 0;
-  padding: 2rem 0 2rem 2rem;
   text-align: center;
   height: calc(100% - 14rem);
+  @include pos(absolute, 4rem, null, null, 1.25rem);
 }
 
 .nav-item {
@@ -18,19 +17,30 @@
   }
 
   &__text {
-    display: none;
+    opacity: 0;
+    transform: translate(2rem, -50%);
+    @include transition();
+    @include pos(absolute, 50%, null, null, 2rem);
   }
 
   &__hover {
-    position: absolute;
     transform: translateY(-100%);
-    top: 50%;
-    left: calc(100% + 50px);
     padding: 0.5rem 0.75rem;
     background-color: #efefef;
-    border-radius: 9px;
+    border-radius: 8px;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease-in-out;
+    @include pos(absolute, 50%, null, null, calc(100% + 2rem));
+    @include transition();
+  }
+}
+
+.nav-items.open {
+  .nav-item__text {
+    opacity: 1;
+    transform: translate(0, -50%);
+  }
+  .nav-item__hover {
+    display: none;
   }
 }

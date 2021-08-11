@@ -1,0 +1,56 @@
+.nav-items {
+  text-align: center;
+  height: calc(100% - 14rem);
+  position: absolute;
+  top: 4rem;
+  left: 1.25rem;
+}
+
+.nav-item {
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.nav-item:hover .nav-item__hover {
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 1;
+}
+
+.nav-item__text {
+  opacity: 0;
+  -webkit-transform: translate(2rem, -50%);
+          transform: translate(2rem, -50%);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+}
+
+.nav-item__hover {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  padding: 0.5rem 0.75rem;
+  background-color: #efefef;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 2rem);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.nav-items.open .nav-item__text {
+  opacity: 1;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.nav-items.open .nav-item__hover {
+  display: none;
+}
+/*# sourceMappingURL=NavItems.css.map */

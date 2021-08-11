@@ -1,13 +1,12 @@
 import { Navbar } from "./components/Navbar";
 import { NavProvider } from "./context/navContext";
-import "./App.css";
+import { MockSite } from "./mock/MockSite";
 
 function App() {
   return (
     <NavProvider>
-      <div className="app">
-        <Navbar />
-      </div>
+      <Navbar />
+      <MockSite />
     </NavProvider>
   );
 }

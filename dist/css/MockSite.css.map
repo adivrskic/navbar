@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,KAAK,CAAC;EACJ,WAAW,ECHE,IAAI;EDIjB,KAAK,EAAE,0BAA0B;EACjC,MAAM,EAAE,KAAK;CAEd;;AAED,AAAA,KAAK,AAAA,KAAK,CAAC;EACT,WAAW,ECTO,KAAK;CDUxB",
+    "sources": [
+        "../../src/mock/MockSite.scss",
+        "../../src/styles/utils/_variables.scss"
+    ],
+    "names": [],
+    "file": "MockSite.css"
+}
