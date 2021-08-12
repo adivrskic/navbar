@@ -7,19 +7,12 @@ export const MockSite = () => {
 
   return (
     <section className={`mock ${state.navOpen ? "open" : "closed"}`}>
-      <header>
-        <div className="mock-small"></div>
-      </header>
-      <main>
-        <div className="mock-full"></div>
-        <div className="mock-full"></div>
-      </main>
-      <article>
-        <div className="mock-half"></div>
-      </article>
-      <footer>
-        <div className="mock-full"></div>
-      </footer>
+      <div className="mock-grid">
+        <header></header>
+        <main></main>
+        <article></article>
+        <footer></footer>
+      </div>
     </section>
   );
 };

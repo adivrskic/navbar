@@ -6,8 +6,8 @@
   color: #6e85b2;
   height: 100vh;
   width: 4rem;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .nav.open {

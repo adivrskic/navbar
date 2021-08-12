@@ -1,5 +1,5 @@
 import React from "react";
-// TODO: Let's not import all the icons
+// TODO: Let's ~not~ import all the icons
 import * as ReactIcons from "react-icons/io5";
 import "../styles/components/NavIcon.scss";
 
