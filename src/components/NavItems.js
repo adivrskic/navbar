@@ -11,7 +11,7 @@ export const NavItems = () => {
 
   return (
     <nav className={`nav-items ${state.navOpen ? "open" : "closed"}`}>
-      <ul>
+      <ul role="list">
         {navData.map((item, index) => (
           <li key={item.key} className="nav-item">
             <NavIcon icon={navIcons[index]} />

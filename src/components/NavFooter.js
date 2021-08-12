@@ -1,5 +1,6 @@
 import React from "react";
 import { NavContext } from "../context/navContext";
+import { NavIcon } from "./NavIcon";
 import data from "../data/profile.json";
 import "../styles/components/NavFooter.scss";
 
@@ -8,8 +9,10 @@ export const NavFooter = () => {
 
   return (
     <div className="nav-footer">
-      <div className={`nav-footer__icon ${state.navOpen && "open"}`}></div>
-      <span className="nav-footer__text">{data.userName}</span>
+      <NavIcon icon="IoFingerPrintOutline" />
+      <span className={`nav-footer__text ${state.navOpen && "open"}`}>
+        {data.userName}
+      </span>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { NavContext } from "../context/navContext";
+import { NavIcon } from "./NavIcon";
 import "../styles/components/NavHeader.scss";
 
 export const NavHeader = () => {
@@ -11,7 +12,11 @@ export const NavHeader = () => {
 
   return (
     <div className="nav-header-container" onClick={() => toggleNavExtend()}>
-      <div className={`nav-header ${state.navOpen ? "open" : "closed"}`}></div>
+      {state.navOpen ? (
+        <NavIcon icon="IoCloseOutline" />
+      ) : (
+        <NavIcon icon="IoMenuOutline" />
+      )}
     </div>
   );
 };

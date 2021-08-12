@@ -1,8 +1,9 @@
 @import "../utils/mixins";
+@import "../utils/variables";
 
 .nav-items {
   text-align: center;
-  height: calc(100% - 14rem);
+  height: calc(100% - 8rem);
   @include pos(absolute, 4rem, null, null, 1.25rem);
 }
 
@@ -23,10 +24,14 @@
     @include pos(absolute, 50%, null, null, 2rem);
   }
 
+  &__text:not(.open) {
+    pointer-events: none;
+  }
+
   &__hover {
     transform: translateY(-100%);
     padding: 0.5rem 0.75rem;
-    background-color: #efefef;
+    background-color: $navbar-bg;
     border-radius: 8px;
     opacity: 0;
     pointer-events: none;

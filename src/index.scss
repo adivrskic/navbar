@@ -1,16 +1,8 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-}
+@import "./styles/utils/resets";
 
 body {
   background-color: #fcfcfc;
   font-family: "Roboto", sans-serif;
   overflow: hidden;
-}
-
-ul {
-  list-style-type: none;
+  font-size: 1rem;
 }
